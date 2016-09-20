@@ -23,7 +23,7 @@ label, p {
   line-height: 20px;
 }
 
-button:focus {
+.btn:focus {
   outline:0;
 }
 
@@ -37,7 +37,7 @@ button:focus {
   background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-family: Helvetica, Arial, sans-serif;
   color: #918c91;
   font-size: 12px;
