@@ -1,0 +1,33 @@
+@import "general.scss";
+
+.container {
+  position: absolute;
+  left: 400px;
+  top: 60px;
+}
+
+.para {
+  width: 750px;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #4A4A4B;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.result {
+  position: absolute;
+  left: 400px;
+  top: 420px;
+}
+
+#output {
+  width: 800px;
+  line-height: 30px;
+}
+
+.btn {
+  @extend %btnGeneral;
+  left: 0px;
+  top: 255px;
+}

@@ -10,7 +10,7 @@ var srctxt;
 var words;
 
 function preload() {
-  srctxt = loadStrings('sourceFiles/Spaceman.txt');
+  srctxt = loadStrings('sourceFiles/Spaceman on a Spree.txt');
 }
 
 function diastic(seed, words) {

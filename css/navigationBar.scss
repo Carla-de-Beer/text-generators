@@ -8,24 +8,26 @@ ul {
   position: fixed;
   height: 100%;
   overflow: auto;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 li a {
   display: block;
   color: #eb105a;
   padding: 8px 16px;
   text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 li a.active {
   color: #eb105a;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 li a:hover:not(.active) {
   color: #eb105a;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 800;
   /*border-bottom: 3px dotted #eb105a;
-  text-decoration: none;*/ }
-
-/*# sourceMappingURL=navigationBar.css.map */
+  text-decoration: none;*/
+}

@@ -1,0 +1,48 @@
+@import "general.scss";
+
+.container {
+  position: absolute;
+  left: 400px;
+  top: 60px;
+}
+
+a {
+  color: #EA3B67;
+  text-decoration: none;
+}
+
+.para {
+  width: 750px;
+  display: block;
+}
+
+#seed {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 1px 0px 1px 10px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0 0 5px #6187EA;
+  border: 1px solid #646161;
+  width: 372px;
+  height: 25px;
+}
+
+.btn {
+  @extend %btnGeneral;
+  left: 0px;
+  top: 290px;
+}
+
+.result {
+  position: relative;
+  left: 1190px;
+  top: 265px;
+  width: 175px;
+  font-family: Courier, Arial, sans-serif;
+  color: #EA3B67;
+  font-size: 14px;
+  display: block;
+}

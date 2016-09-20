@@ -1,28 +1,33 @@
 body {
-  padding: 0;
-  margin: 0; }
+  padding: 0; margin: 0;
+}
 
 canvas {
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 h1 {
   font-family: Helvetica, Arial, sans-serif;
-  color: #77787E; }
+  color: #77787E;
+}
 
 h5 {
   font-family: Helvetica, Arial, sans-serif;
-  color: #77787E; }
+  color: #77787E;
+}
 
 label, p {
   font-family: Helvetica, Arial, sans-serif;
   color: #4A4A4B;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 button:focus {
-  outline: 0; }
+  outline:0;
+}
 
-.btn {
+%btnGeneral {
   position: absolute;
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -37,7 +42,8 @@ button:focus {
   color: #918c91;
   font-size: 12px;
   padding: 10px 25px 10px 25px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .btn:hover {
   background: #CECCCD;
@@ -46,32 +52,5 @@ button:focus {
   background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
-  text-decoration: none; }
-
-.container {
-  position: absolute;
-  left: 400px;
-  top: 60px; }
-
-.para {
-  width: 750px;
-  display: block;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #4A4A4B;
-  font-size: 14px;
-  line-height: 20px; }
-
-.result {
-  position: absolute;
-  left: 400px;
-  top: 420px; }
-
-#output {
-  width: 800px;
-  line-height: 30px; }
-
-.btn {
-  left: 0px;
-  top: 255px; }
-
-/*# sourceMappingURL=regexStyle.css.map */
+  text-decoration: none;
+}

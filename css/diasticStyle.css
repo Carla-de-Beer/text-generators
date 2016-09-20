@@ -1,102 +1,91 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: white;
-}
+  padding: 0;
+  margin: 0; }
 
 canvas {
-    vertical-align: top;
-}
-
-.container {
-    position: absolute;
-    left: 400px;
-    top: 80px;
-}
+  vertical-align: top; }
 
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #77787E;
-}
+  font-family: Helvetica, Arial, sans-serif;
+  color: #77787E; }
 
 h5 {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #77787E;
-}
+  font-family: Helvetica, Arial, sans-serif;
+  color: #77787E; }
 
 label, p {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #4A4A4B;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-a {
-    color: #EA3B67;
-    text-decoration: none;
-}
-
-.para {
-    width: 750px;
-    display: block;
-}
+  font-family: Helvetica, Arial, sans-serif;
+  color: #4A4A4B;
+  font-size: 14px;
+  line-height: 20px; }
 
 button:focus {
-    outline:0;
-}
-
-#seed {
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-    padding: 1px 0px 1px 10px;
-    margin: 10px 0px 0px 0px;
-    box-shadow: 0 0 5px #6187EA;
-    border: 1px solid #646161;
-    width: 372px;
-    height: 25px;
-}
+  outline: 0; }
 
 .btn {
-    position: absolute;
-    left: 0px;
-    top: 290px;
-    background: #ebeef0;
-    background-image: -webkit-linear-gradient(top, #ebeef0, #e8eaeb);
-    background-image: -moz-linear-gradient(top, #ebeef0, #e8eaeb);
-    background-image: -ms-linear-gradient(top, #ebeef0, #e8eaeb);
-    background-image: -o-linear-gradient(top, #ebeef0, #e8eaeb);
-    background-image: linear-gradient(to bottom, #ebeef0, #e8eaeb);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #918c91;
-    font-size: 12px;
-    padding: 10px 25px 10px 25px;
-    text-decoration: none;
-}
+  position: absolute;
+  background: #ebeef0;
+  background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -ms-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -o-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #918c91;
+  font-size: 12px;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none; }
 
 .btn:hover {
-    background: #CECCCD;
-    background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
-    background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
-    background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
-    background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
-    background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
-    text-decoration: none;
-}
+  background: #CECCCD;
+  background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
+  text-decoration: none; }
+
+.container {
+  position: absolute;
+  left: 400px;
+  top: 60px; }
+
+a {
+  color: #EA3B67;
+  text-decoration: none; }
+
+.para {
+  width: 750px;
+  display: block; }
+
+#seed {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 1px 0px 1px 10px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0 0 5px #6187EA;
+  border: 1px solid #646161;
+  width: 372px;
+  height: 25px; }
+
+.btn {
+  left: 0px;
+  top: 290px; }
 
 .result {
-    position: relative;
-    left: 1190px;
-    top: 265px;
-    width: 175px;
-    font-family: Courier, Arial, sans-serif;
-    color: #EA3B67;
-    font-size: 14px;
-    display: block;
-}
+  position: relative;
+  left: 1190px;
+  top: 265px;
+  width: 175px;
+  font-family: Courier, Arial, sans-serif;
+  color: #EA3B67;
+  font-size: 14px;
+  display: block; }
+
+/*# sourceMappingURL=diasticStyle.css.map */

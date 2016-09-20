@@ -1,3 +1,10 @@
+// Carla de Beer
+// September 2016
+// Inspired by Daniel Shiffman's Coding Rainbow series:
+// http://shiffman.net/a2z/intro/
+
+// Built with P5.js
+
 var textfield, output, submit;
 
 function setup() {
@@ -24,7 +31,6 @@ function newText() {
       }
       span.parent(output);
       if (!pattern.test(words[i])) {
-        //span.style('background-color', color(random(255), 0, random(255), 180));
         span.mouseOver(highlight);
     }
   }
