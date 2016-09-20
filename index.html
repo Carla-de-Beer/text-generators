@@ -5,25 +5,30 @@
     <title>Jackson Mac Low Diastic</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
-    <script src="sketch.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scriptFiles/diasticSketch.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/diasticStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
   </head>
-  
+
   <body>
     <div class="container">
       <h1>Jackson Mac Low Diastic</h1>
       <p class="para">This diastic generates "poems" based on the input provided by the user, and applies this to a piece of text.
-          <br>
+          <br />
           This <a href="http://www.eddeaddad.net/ediastic/">link</a> describes how the diastic operates.
-          <br>
+          <br />
         In this example, the text is 'Spaceman on a Spree', by Mack Reynolds, 1963 (obtained from Project Gutenberg).</p>
-        <br><br>
+        <br /><br />
         <label for="seed"><i>Provide an input seed:</i>&nbsp;</label>
       <input id="seed" value="to be or not to be ">
       <button id="submit" class="btn">Submit</button>
     </div>
-    
+
+    <ul>
+      <li><a href="index.html">Diastic</a></li>
+      <li><a href="regex.html">Regular Expressions</a></li>
+    </ul>
+
   </body>
-  
+
 </html>

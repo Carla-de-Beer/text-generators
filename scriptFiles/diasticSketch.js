@@ -10,7 +10,7 @@ var srctxt;
 var words;
 
 function preload() {
-  srctxt = loadStrings('Spaceman on a Spree.txt');
+  srctxt = loadStrings('sourceFiles/Spaceman.txt');
 }
 
 function diastic(seed, words) {
@@ -42,7 +42,7 @@ function setup() {
 
   var seed = select("#seed");
   var submit = select("#submit");
-  
+
   submit.mousePressed(function() {
     var phrase = diastic(seed.value(), words);
     createP(phrase).addClass('result');
