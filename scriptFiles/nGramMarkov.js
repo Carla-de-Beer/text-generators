@@ -3,19 +3,19 @@ var num = 100;
 var ngrams = {};
 var beginnings = [];
 var button;
-var names;
+var text;
 var colors = ["color1", "color2", "color3"];
 
 function preload() {
-  names = loadStrings("sourceFiles/Dracula.txt");
-  console.log(names);
+  text = loadStrings("sourceFiles/Dracula.txt");
+  console.log(text);
 }
 
 function setup() {
   noCanvas();
 
-  for (var j = 0; j < names.length; ++j) {
-    var txt = names[j];
+  for (var j = 0; j < text.length; ++j) {
+    var txt = text[j];
     for (var i = 0; i <= txt.length - order; ++i) {
       var gram = txt.substring(i, i + order);
 
@@ -33,6 +33,7 @@ function setup() {
   console.log(ngrams);
   button = createButton("Generate " + order.toString() + "-Gram Markov chain");
   button.mousePressed(generateMarkov);
+	button.addClass("btnClass");
 
 }
 

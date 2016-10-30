@@ -1,0 +1,34 @@
+@import "general.scss";
+
+.basicParaStyle {
+  position: relative;
+  left: 350px;
+  top: 100px;
+}
+
+.color1 {
+  @extend .basicParaStyle;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #acd342;
+  font-weight:normal;
+  font-size: 22px;
+}
+
+.color2 {
+  @extend .basicParaStyle;
+  color: #353627;
+  font-weight:bold;
+  font-size: 11px;
+}
+
+.color3 {
+  @extend .basicParaStyle;
+  color: #8a4cb5;
+  font-size: 16px;
+}
+
+.btnClass {
+  @extend %btnGeneral;
+  left: 0px;
+  top: 290px;
+}
