@@ -1,0 +1,25 @@
+ {
+   padding: 0; margin: 0;
+}
+
+canvas {
+  vertical-align: top;
+}
+
+.color1 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #acd342;
+  font-weight:normal;
+  font-size: 22px;
+}
+
+.color2 {
+  color: #353627;
+  font-weight:bold;
+  font-size: 11px;
+}
+
+.color3 {
+  color: #8a4cb5;
+  font-size: 16px;
+}
