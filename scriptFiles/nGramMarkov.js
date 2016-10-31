@@ -12,7 +12,8 @@ function preload() {
 }
 
 function setup() {
-  noCanvas();
+	"use strict";
+	noCanvas();
 
   for (var j = 0; j < text.length; ++j) {
     var txt = text[j];
@@ -37,7 +38,13 @@ function setup() {
 
 }
 
+/*function draw() {
+	order = document.getElementById("nGramRange");
+	num = document.getElementById("numRange");
+}*/
+
 function generateMarkov() {
+	"use strict";
   var currentGram = random(beginnings);
   var result = currentGram;
 
@@ -51,6 +58,8 @@ function generateMarkov() {
     var len = result.length;
     currentGram = result.substring(len - order, len);
   }
+
   var rand = random(colors);
   createP(result).addClass(rand);
+
 }

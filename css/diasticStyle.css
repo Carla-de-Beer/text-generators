@@ -19,6 +19,11 @@ label, p {
   font-size: 14px;
   line-height: 20px; }
 
+.container {
+  position: absolute;
+  left: 400px;
+  top: 60px; }
+
 .btn:focus {
   outline: 0; }
 
