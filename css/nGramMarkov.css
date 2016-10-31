@@ -36,10 +36,20 @@ label, p {
   background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
   text-decoration: none; }
 
-.basicParaStyle, .color1, .color2, .color3, .btnClass {
+.nGramRange {
+  position: absolute;
+  left: 300px;
+  top: 205px; }
+
+.numRange {
+  position: absolute;
+  left: 300px;
+  top: 245px; }
+
+.basicParaStyle, .color1, .color2, .color3, .btnClass, .btnClass2 {
   position: relative;
   left: 400px;
-  top: 300px; }
+  top: 450px; }
 
 .color1 {
   font-family: Helvetica, Arial, sans-serif;
@@ -48,7 +58,7 @@ label, p {
   font-size: 22px; }
 
 .color2 {
-  color: #353627;
+  color: #80808b;
   font-weight: bold;
   font-size: 11px; }
 
@@ -56,8 +66,7 @@ label, p {
   color: #8a4cb5;
   font-size: 16px; }
 
-.btnClass {
-  top: 250px;
+.basicButton, .btnClass, .btnClass2 {
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
   background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -73,7 +82,7 @@ label, p {
   padding: 10px 25px 10px 25px;
   text-decoration: none; }
 
-.btnClass:hover {
+.basicButton:hover, .btnClass:hover, .btnClass2:hover {
   background: #CECCCD;
   background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
@@ -81,5 +90,13 @@ label, p {
   background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
   text-decoration: none; }
+
+.btnClass {
+  top: 35px;
+  left: 0px; }
+
+.btnClass2 {
+  top: -14px;
+  left: 250px; }
 
 /*# sourceMappingURL=nGramMarkov.css.map */

@@ -3,7 +3,7 @@
 .basicParaStyle {
   position: relative;
   left: 400px;
-  top: 300px;
+  top: 450px;
 }
 
 .color1 {
@@ -16,7 +16,7 @@
 
 .color2 {
   @extend .basicParaStyle;
-  color: #353627;
+  color: #80808b;
   font-weight:bold;
   font-size: 11px;
 }
@@ -27,9 +27,7 @@
   font-size: 16px;
 }
 
-.btnClass {
-  @extend .basicParaStyle;
-  top: 250px;
+.basicButton {
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
   background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -46,7 +44,7 @@
   text-decoration: none;
 }
 
-.btnClass:hover {
+.basicButton:hover {
   background: #CECCCD;
   background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
@@ -54,4 +52,26 @@
   background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
   text-decoration: none;
+}
+
+.btnClass {
+  @extend .basicParaStyle;
+  @extend .basicButton;
+  top: 35px;
+  left: 0px;
+}
+
+.btnClass:hover {
+  @extend .basicButton:hover;
+}
+
+.btnClass2 {
+  @extend .basicParaStyle;
+  @extend .basicButton;
+  top: -14px;
+  left: 250px;
+}
+
+.btnClass2:hover {
+  @extend .basicButton:hover;
 }

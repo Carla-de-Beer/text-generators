@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="UTF-8">
-    <title>nGramMarkov</title>
-    <script src="libraries/p5.js" type="text/javascript"></script>
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="scriptFiles/nGramMarkov.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="css/nGramMarkov.css">
-    <link rel="stylesheet" type="text/css" href="css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
+      <meta charset="UTF-8">
+      <title>nGramMarkov</title>
+      <script src="libraries/p5.js" type="text/javascript"></script>
+      <script src="libraries/p5.dom.js" type="text/javascript"></script>
+      <script src="scriptFiles/nGramMarkov.js" type="text/javascript"></script>
+      <script src="scriptFiles/general.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="css/nGramMarkov.css">
+      <link rel="stylesheet" type="text/css" href="css/general.css">
+      <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
   </head>
+
   <body>
-  <div class="container">
-    <h1>n-Gram Markov Chain</h1>
-    <p class="para">Generate new random text based on a provided input text.
-      <br />
-      In this example, the text is 'Dracula', by Bram Stoker, 1897 (obtained from Project Gutenberg).</p>
- <!--       Move the sliders to change the value of the n-Gram and the length of the output text to be provided</p>-->
-<!--    <br /><br />
-    <input type="range" id="nGramRange" value="3" min="1" max="10" step="1">
-      <br /><br />
-      <input type="range" id="numRange" value="100" min="1" max="100" step="5">-->
-  </div>
+      <div class="container">
+        <h1>n-Gram Markov Chain</h1>
+            <p class="para">Generate new random text based on a provided input text.
+            <br />
+            In this example, the text is 'Spaceman on a Spree', by Mack Reynolds, 1963 (obtained from Project Gutenberg).</p>
 
-    <ul>
-      <li><a href="index.html">Jackson Mac Low Diastic</a></li>
-      <li><a href="regex.html">Regular Expressions</a></li>
-      <li><a href="nGramMarkov.html">n-Gram Markov Chains</a></li>
-    </ul>
+            <p> Move the sliders to change the value of the n-Gram and the length of the output text to be provided</p>
+            <br /><br />
+
+            <label for="rangeVal" id="labelNGram">n-Gram value: 3</label>
+            <input type="range" id="nGramRange" class="nGramRange" value="3" min="1" max="10" step="1">
+
+            <br /><br />
+
+            <label for="rangeVal" id="labelNum">Output length (number of characters): 70</label>
+            <input type="range" id="numRange" class="numRange" value="70" min="1" max="100" step="1">
+            <p><button id="submit" class="btnClass" onclick="generateMarkov()">Generate n-Gram Markov chain</button></p>
+            <p><button id="clear" class="btnClass2" onclick="clearDiv()">Clear Text</button></p>
+      </div>
+
+      <ul>
+          <li><a href="index.html">Jackson Mac Low Diastic</a></li>
+          <li><a href="regex.html">Regular Expressions</a></li>
+          <li><a href="nGramMarkov.html">n-Gram Markov Chains</a></li>
+      </ul>
 
   </body>
-  </body>
+
 </html>
