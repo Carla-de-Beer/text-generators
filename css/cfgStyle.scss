@@ -38,6 +38,7 @@ canvas {
 
 .btn {
   position: absolute;
+  top: 195px;
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
   background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -65,7 +66,6 @@ canvas {
 
 .btn1 {
   @extend .btn;
-  top: 140px;
   left: 1px;  }
 
 .btn1:hover {
@@ -74,13 +74,21 @@ canvas {
 
 .btn2 {
   @extend .btn;
-  top: 140px;
   left: 180px;
  }
 
 .btn2:hover {
   @extend .btn:hover;
  }
+
+.btn3 {
+  @extend .btn;
+  left: 280px;
+}
+
+.btn3:hover {
+  @extend .btn:hover;
+}
 
 
 

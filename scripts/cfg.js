@@ -1,3 +1,12 @@
+// Carla de Beer
+// November 2016
+// Context Free Grammar
+// Inspired by Daniel Shiffman's Coding Rainbow series:
+// http://shiffman.net/a2z/intro/
+
+// Built with P5.js
+
+
 function ContextFree() {
 
 	this.rules = {
@@ -16,10 +25,10 @@ function ContextFree() {
 			["Vintr"]
 		],
 		"Interj": [
-			["oh"],
-			["my"],
-			["wow"],
-			["darn"]
+			["oh!"],
+			["my!"],
+			["wow!"],
+			["darn!"]
 		],
 		"Det": [
 			["this"],
@@ -44,21 +53,21 @@ function ContextFree() {
 var randomNounURL = 	"http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true" +
 						"&includePartOfSpeech=noun&minCorpusCount=1&maxCorpusCount=-1" +
 						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=10" +
-						"&maxLength=-1&limit=5&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
+						"&maxLength=-1&limit=20&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
 
 var randomAdjURL = 		"http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true" +
 						"&includePartOfSpeech=adjective&minCorpusCount=1&maxCorpusCount=-1" +
 						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1" +
-						"&limit=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
+						"&limit=20&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
 
 var randomVtransURL = 	"http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true" +
 	                  	"&includePartOfSpeech=verb-transitive&minCorpusCount=1&maxCorpusCount=-1" +
-						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=10" +
+						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=20" +
 						"&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
 
 var randomVintrURL = 	"http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true" +
 						"&includePartOfSpeech=verb-intransitive&minCorpusCount=1&maxCorpusCount=-1" +
-						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=10" +
+						"&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=20" +
 						"&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
 
 
@@ -72,58 +81,66 @@ var adjectiveArray = [];
 var vTransArray = [];
 var vIntrArray = [];
 
+var randomNounPath = "JSON/noun.json";
+var randomAdjPath =  "JSON/adjective.json";
+var randomVtransPath =  "JSON/vTrans.json";
+var randomVintrPath =  "JSON/vIntr.json";
+
+
+function preload() {
+	getWord(randomNounPath, nounArray);
+	getWord(randomAdjPath, adjectiveArray);
+	getWord(randomVtransPath, vTransArray);
+	getWord(randomVintrPath, vIntrArray);
+}
+
 
 function setup() {
 
 	noCanvas();
 
-	getWord(randomNounURL, nounArray);
-	getWord(randomAdjURL, adjectiveArray);
-	getWord(randomVtransURL, vTransArray);
-	getWord(randomVintrURL, vIntrArray);
-
-	setTimeout(function () {
+	setTimeout(function(){
 
 		nounArray.print();
 		adjectiveArray.print();
 		vTransArray.print();
 		vIntrArray.print();
 
-		function getExpansion() {
+	function getExpansion() {
 
-			var start = "S";
-			var expansion = [];
-			var cfg = new ContextFree();
-			var result = cfg.expand(start, expansion, noun, adjective, vTrans, vIntr);
+		var start = "S";
+		var expansion = [];
+		var cfg = new ContextFree();
+		var result = cfg.expand(start, expansion, noun, adjective, vTrans, vIntr);
 
-			var paragraph = document.createElement("p");
-			paragraph.id = "paragraph";
-			paragraph.classList.add("cfgPara");
-			paragraph.innerHTML = result;
-			var content = document.getElementById("result");
-			content.appendChild(paragraph);
+		var paragraph = document.createElement("p");
+		paragraph.id = "paragraph";
+		paragraph.classList.add("cfgPara");
+		paragraph.innerHTML = result;
+		var content = document.getElementById("result");
+		content.appendChild(paragraph);
 
-		}
+	}
 
-		clearElement("wait");
+	clearElement("wait");
 
-		var content = document.getElementById("content");
+	var content = document.getElementById("content");
 
-		var buttonGenerate = document.createElement("button");
-		buttonGenerate.id = "buttonGenerate";
-		buttonGenerate.classList.add("btn1");
-		buttonGenerate.innerHTML = "Generate Grammars";
-		buttonGenerate.addEventListener("click", getExpansion, false);
-		content.appendChild(buttonGenerate);
+	var buttonGenerate = document.createElement("button");
+	buttonGenerate.id = "buttonGenerate";
+	buttonGenerate.classList.add("btn1");
+	buttonGenerate.innerHTML = "Generate Grammars";
+	buttonGenerate.addEventListener("click", getExpansion, false);
+	content.appendChild(buttonGenerate);
 
-		var buttonClear = document.createElement("button");
-		buttonClear.id = "buttonClear";
-		buttonClear.classList.add("btn2");
-		buttonClear.innerHTML = "Clear";
-		buttonClear.addEventListener("click", clearDiv, false);
-		content.appendChild(buttonClear);
+	var buttonClear = document.createElement("button");
+	buttonClear.id = "buttonClear";
+	buttonClear.classList.add("btn2");
+	buttonClear.innerHTML = "Clear";
+	buttonClear.addEventListener("click", clearDiv, false);
+	content.appendChild(buttonClear);
 
-	}, 1500);
+	}, 1000);
 
 }
 
@@ -146,7 +163,7 @@ ContextFree.prototype.expand = function (start, expansion, noun, adjective, vTra
 	if (this.rules.hasOwnProperty(start)) {
 		var possibilities = this.rules[start];
 		var picked = possibilities.choice();
-		console.log(picked);
+		//console.log(picked);
 
 		if (picked[0] === "noun") {
 			picked = [random(nounArray)];

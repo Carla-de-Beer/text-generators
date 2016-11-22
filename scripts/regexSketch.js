@@ -1,5 +1,6 @@
 // Carla de Beer
 // September 2016
+// Regex exercise
 // Inspired by Daniel Shiffman's Coding Rainbow series:
 // http://shiffman.net/a2z/intro/
 

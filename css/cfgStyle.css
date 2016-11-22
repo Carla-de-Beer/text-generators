@@ -34,8 +34,9 @@ canvas {
   padding: 15px 0 5px 20px;
   margin: 30px 0 30px 0; }
 
-.btn, .btn1, .btn2 {
+.btn, .btn1, .btn2, .btn3 {
   position: absolute;
+  top: 195px;
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
   background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -51,7 +52,7 @@ canvas {
   padding: 10px 25px 10px 25px;
   text-decoration: none; }
 
-.btn:hover, .btn1:hover, .btn2:hover {
+.btn:hover, .btn1:hover, .btn2:hover, .btn3:hover {
   background: #CECCCD;
   background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
@@ -61,11 +62,12 @@ canvas {
   text-decoration: none; }
 
 .btn1 {
-  top: 140px;
   left: 1px; }
 
 .btn2 {
-  top: 140px;
   left: 180px; }
+
+.btn3 {
+  left: 280px; }
 
 /*# sourceMappingURL=cfgStyle.css.map */

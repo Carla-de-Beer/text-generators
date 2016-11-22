@@ -1,3 +1,11 @@
+// Carla de Beer
+// November 2016
+// N-Gram Markov Chain
+// Inspired by Daniel Shiffman's Coding Rainbow series:
+// http://shiffman.net/a2z/intro/
+
+// Built with P5.js
+
 var order = 3;
 var num = 50;
 var ngrams = {};
