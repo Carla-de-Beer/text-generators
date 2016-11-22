@@ -1,0 +1,71 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+canvas {
+  vertical-align: top; }
+
+.container {
+  position: absolute;
+  left: 400px;
+  top: 60px; }
+
+.result {
+  position: relative;
+  top: 10px;
+  left: 0; }
+
+.para {
+  width: 750px;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #4A4A4B;
+  font-size: 14px;
+  line-height: 20px; }
+
+.cfgPara {
+  position: relative;
+  top: 80px;
+  width: 85%;
+  height: 30px;
+  background: #eeeeee;
+  color: #eb105a;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 15px 0 5px 20px;
+  margin: 30px 0 30px 0; }
+
+.btn, .btn1, .btn2 {
+  position: absolute;
+  background: #ebeef0;
+  background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -ms-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -o-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #918c91;
+  font-size: 12px;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none; }
+
+.btn:hover, .btn1:hover, .btn2:hover {
+  background: #CECCCD;
+  background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
+  background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
+  text-decoration: none; }
+
+.btn1 {
+  top: 140px;
+  left: 1px; }
+
+.btn2 {
+  top: 140px;
+  left: 180px; }
+
+/*# sourceMappingURL=cfgStyle.css.map */
