@@ -27,7 +27,7 @@ label, p {
 .btn:focus {
   outline: 0; }
 
-.btn {
+.btn1, .btn2 {
   position: absolute;
   background: #ebeef0;
   background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
@@ -44,7 +44,7 @@ label, p {
   padding: 10px 25px 10px 25px;
   text-decoration: none; }
 
-.btn:hover {
+.btn1:hover, .btn2:hover {
   background: #CECCCD;
   background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
@@ -89,9 +89,13 @@ a {
   width: 372px;
   height: 25px; }
 
-.btn {
-  left: 0px;
-  top: 290px; }
+.btn1 {
+  top: 310px;
+  left: 0; }
+
+.btn2 {
+  top: 310px;
+  left: 110px; }
 
 .result {
   position: relative;

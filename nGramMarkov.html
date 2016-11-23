@@ -8,9 +8,9 @@
       <script src="libraries/p5.dom.js" type="text/javascript"></script>
       <script src="scripts/nGramMarkov.js" type="text/javascript"></script>
       <script src="scripts/general.js" type="text/javascript"></script>
-      <link rel="stylesheet" type="text/css" href="css/nGramMarkov.css">
       <link rel="stylesheet" type="text/css" href="css/general.css">
       <link rel="stylesheet" type="text/css" href="css/navigationBar.css">
+      <link rel="stylesheet" type="text/css" href="css/nGramMarkov.css">
   </head>
 
   <body>
@@ -30,8 +30,8 @@
 
             <label for="rangeVal" id="labelNum">Output length (number of characters): 70</label>
             <input type="range" id="numRange" class="numRange" value="70" min="1" max="100" step="1">
-            <p><button id="submit" class="btnClass" onclick="generateMarkov()">Generate n-Gram Markov chain</button></p>
-            <p><button id="clear" class="btnClass2" onclick="clearDiv()">Clear Text</button></p>
+            <button id="submit" class="btn1" onclick="generateMarkov()">Generate n-Gram Markov chain</button>
+            <button id="clear" class="btn2" onclick="clearDiv()">Clear Text</button>
       </div>
 
       <ul>

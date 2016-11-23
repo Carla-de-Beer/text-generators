@@ -25,10 +25,13 @@ function ContextFree() {
 			["Vintr"]
 		],
 		"Interj": [
+			["darn"],
 			["oh!"],
-			["my!"],
-			["wow!"],
-			["darn!"]
+			["zoinks"],
+			["wow"],
+			["whammo"],
+			["phwoarr"],
+			["yeehaw"]
 		],
 		"Det": [
 			["this"],
@@ -36,10 +39,10 @@ function ContextFree() {
 			["the"]
 		],
 		"N": [
-			["noun"]
+			["Noun"]
 		],
 		"Adj": [
-			["adjective"]
+			["Adjective"]
 		],
 		"Vtrans": [
 			["Vtrans"]
@@ -71,11 +74,6 @@ var randomVintrURL = 	"http://api.wordnik.com:80/v4/words.json/randomWords?hasDi
 						"&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
 
 
-var noun = "";
-var adjective = "";
-var vTrans = "";
-var vIntr = "";
-
 var nounArray = [];
 var adjectiveArray = [];
 var vTransArray = [];
@@ -99,19 +97,17 @@ function setup() {
 
 	noCanvas();
 
-	setTimeout(function(){
-
-		nounArray.print();
-		adjectiveArray.print();
-		vTransArray.print();
-		vIntrArray.print();
+	nounArray.print();
+	adjectiveArray.print();
+	vTransArray.print();
+	vIntrArray.print();
 
 	function getExpansion() {
 
 		var start = "S";
 		var expansion = [];
 		var cfg = new ContextFree();
-		var result = cfg.expand(start, expansion, noun, adjective, vTrans, vIntr);
+		var result = cfg.expand(start, expansion);
 
 		var paragraph = document.createElement("p");
 		paragraph.id = "paragraph";
@@ -140,8 +136,6 @@ function setup() {
 	buttonClear.addEventListener("click", clearDiv, false);
 	content.appendChild(buttonClear);
 
-	}, 1000);
-
 }
 
 Array.prototype.print = function() {
@@ -158,18 +152,18 @@ function getWord(urlNoun, array) {
 	});
 }
 
-ContextFree.prototype.expand = function (start, expansion, noun, adjective, vTrans, vIntr) {
+ContextFree.prototype.expand = function (start, expansion) {
 
 	if (this.rules.hasOwnProperty(start)) {
 		var possibilities = this.rules[start];
 		var picked = possibilities.choice();
 		//console.log(picked);
 
-		if (picked[0] === "noun") {
+		if (picked[0] === "Noun") {
 			picked = [random(nounArray)];
 		}
 
-		if (picked[0] === "adjective") {
+		if (picked[0] === "Adjective") {
 			picked = [random(adjectiveArray)];
 		}
 
@@ -183,7 +177,7 @@ ContextFree.prototype.expand = function (start, expansion, noun, adjective, vTra
 
 		// call this method again with the current element of the expansion
 		for (var i = 0; i < picked.length; ++i) {
-			this.expand(picked[i], expansion, noun, adjective, vTrans, vIntr);
+			this.expand(picked[i], expansion);
 		}
 	} else {
 		expansion.push(start);
@@ -194,7 +188,7 @@ ContextFree.prototype.expand = function (start, expansion, noun, adjective, vTra
 };
 
 Array.prototype.choice = function () {
-	var i = floor(random(this.length));
+	var i = Math.floor(random(this.length));
 	return this[i];
 };
 

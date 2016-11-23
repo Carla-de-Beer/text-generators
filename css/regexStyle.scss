@@ -18,7 +18,7 @@
 .result {
   position: absolute;
   left: 400px;
-  top: 420px;
+  top: 440px;
 }
 
 #output {
@@ -26,8 +26,14 @@
   line-height: 30px;
 }
 
-.btn {
+.btn1 {
   @extend %btnGeneral;
-  left: 0px;
-  top: 255px;
+  top: 310px;
+  left: 0;
+}
+
+.btn2 {
+  @extend %btnGeneral;
+  top: 310px;
+  left: 110px;
 }

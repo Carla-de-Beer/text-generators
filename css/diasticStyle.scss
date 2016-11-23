@@ -30,10 +30,16 @@ a {
   height: 25px;
 }
 
-.btn {
+.btn1 {
   @extend %btnGeneral;
-  left: 0px;
-  top: 290px;
+  top: 310px;
+  left: 0;
+}
+
+.btn2 {
+  @extend %btnGeneral;
+  top: 310px;
+  left: 110px;
 }
 
 .result {

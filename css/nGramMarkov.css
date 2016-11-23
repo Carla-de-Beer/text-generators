@@ -27,7 +27,24 @@ label, p {
 .btn:focus {
   outline: 0; }
 
-.btn:hover {
+.btn1, .btn2 {
+  position: absolute;
+  background: #ebeef0;
+  background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -ms-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: -o-linear-gradient(top, #f5f2f0, #e8eaeb);
+  background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #918c91;
+  font-size: 12px;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none; }
+
+.btn1:hover, .btn2:hover {
   background: #CECCCD;
   background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
   background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
@@ -46,7 +63,7 @@ label, p {
   left: 300px;
   top: 245px; }
 
-.basicParaStyle, .color1, .color2, .color3, .btnClass, .btnClass2 {
+.basicParaStyle, .color1, .color2, .color3 {
   position: relative;
   left: 400px;
   top: 450px; }
@@ -66,37 +83,12 @@ label, p {
   color: #8a4cb5;
   font-size: 16px; }
 
-.basicButton, .btnClass, .btnClass2 {
-  background: #ebeef0;
-  background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -ms-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -o-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 5px;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #918c91;
-  font-size: 12px;
-  padding: 10px 25px 10px 25px;
-  text-decoration: none; }
-
-.basicButton:hover, .btnClass:hover, .btnClass2:hover {
-  background: #CECCCD;
-  background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
-  text-decoration: none; }
-
-.btnClass {
-  top: 35px;
+.btn1 {
+  top: 310px;
   left: 0px; }
 
-.btnClass2 {
-  top: -14px;
-  left: 250px; }
+.btn2 {
+  top: 310px;
+  left: 240px; }
 
 /*# sourceMappingURL=nGramMarkov.css.map */

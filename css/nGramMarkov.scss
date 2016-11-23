@@ -27,51 +27,14 @@
   font-size: 16px;
 }
 
-.basicButton {
-  background: #ebeef0;
-  background-image: -webkit-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -moz-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -ms-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: -o-linear-gradient(top, #f5f2f0, #e8eaeb);
-  background-image: linear-gradient(to bottom, #f5f2f0, #e8eaeb);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 5px;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #918c91;
-  font-size: 12px;
-  padding: 10px 25px 10px 25px;
-  text-decoration: none;
-}
-
-.basicButton:hover {
-  background: #CECCCD;
-  background-image: -webkit-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -moz-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -ms-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: -o-linear-gradient(top, #F5F2F3, #CECCCD);
-  background-image: linear-gradient(to bottom, #F5F2F3, #CECCCD);
-  text-decoration: none;
-}
-
-.btnClass {
-  @extend .basicParaStyle;
-  @extend .basicButton;
-  top: 35px;
+.btn1 {
+  @extend %btnGeneral;
+  top: 310px;
   left: 0px;
 }
 
-.btnClass:hover {
-  @extend .basicButton:hover;
-}
-
-.btnClass2 {
-  @extend .basicParaStyle;
-  @extend .basicButton;
-  top: -14px;
-  left: 250px;
-}
-
-.btnClass2:hover {
-  @extend .basicButton:hover;
+.btn2 {
+  @extend %btnGeneral;
+  top: 310px;
+  left: 240px;
 }
