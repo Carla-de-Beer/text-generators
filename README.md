@@ -1,4 +1,4 @@
-# P5js Text Generators #
+# Text Generators #
 
 This is a website that contains a number of generative text projects, based on Daniel Shiffman's 2016-2017 "Programming from A to Z" course: http://shiffman.net/a2z/
 
