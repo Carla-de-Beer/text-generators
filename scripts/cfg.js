@@ -4,9 +4,6 @@
 // Inspired by Daniel Shiffman's Coding Rainbow series:
 // http://shiffman.net/a2z/intro/
 
-// Built with P5.js
-
-
 function ContextFree() {
 
 	this.rules = {
@@ -84,7 +81,6 @@ var randomAdjPath =  "JSON/adjective.json";
 var randomVtransPath =  "JSON/vTrans.json";
 var randomVintrPath =  "JSON/vIntr.json";
 
-
 function preload() {
 	getWord(randomNounPath, nounArray);
 	getWord(randomAdjPath, adjectiveArray);
@@ -92,9 +88,7 @@ function preload() {
 	getWord(randomVintrPath, vIntrArray);
 }
 
-
 function setup() {
-
 	noCanvas();
 
 	nounArray.print();
@@ -103,7 +97,6 @@ function setup() {
 	vIntrArray.print();
 
 	function getExpansion() {
-
 		var start = "S";
 		var expansion = [];
 		var cfg = new ContextFree();
@@ -115,7 +108,6 @@ function setup() {
 		paragraph.innerHTML = result;
 		var content = document.getElementById("result");
 		content.appendChild(paragraph);
-
 	}
 
 	clearElement("wait");
@@ -135,7 +127,6 @@ function setup() {
 	buttonClear.innerHTML = "Clear";
 	buttonClear.addEventListener("click", clearDiv, false);
 	content.appendChild(buttonClear);
-
 }
 
 Array.prototype.print = function() {
@@ -153,7 +144,6 @@ function getWord(urlNoun, array) {
 }
 
 ContextFree.prototype.expand = function (start, expansion) {
-
 	if (this.rules.hasOwnProperty(start)) {
 		var possibilities = this.rules[start];
 		var picked = possibilities.choice();
@@ -184,7 +174,6 @@ ContextFree.prototype.expand = function (start, expansion) {
 	}
 
 	return expansion.join(" ");
-
 };
 
 Array.prototype.choice = function () {

@@ -1,10 +1,8 @@
 // Carla de Beer
 // September 2016
-// Regex exercise
+// Regex exercise to dynamically redact words.
 // Inspired by Daniel Shiffman's Coding Rainbow series:
 // http://shiffman.net/a2z/intro/
-
-// Built with P5.js
 
 var textfield, output, submit;
 
@@ -25,8 +23,8 @@ function newText() {
   var pattern = /\W+/;
 
   for(var i = 0; i < words.length; ++i) {
-      if (words[i] === '.' || words[i] === ',' || words[i] === '!' || words[i] === '?') {
-          var span = createSpan(words[i] + ' ');
+      if (words[i] === "." || words[i] === "," || words[i] === "!" || words[i] === "?") {
+          var span = createSpan(words[i] + " ");
       } else {
           var span = createSpan(words[i]);
       }
@@ -40,7 +38,7 @@ function newText() {
 function highlight() {
   //console.log(this);
   //console.log(this.html());
-  this.html('rainbow');
+  this.html("rainbow");
   var col = color(random(255), random(255), random(255), 180)
-  this.style('background-color', col);
+  this.style("background-color", col);
 }

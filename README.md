@@ -4,7 +4,7 @@ This is a website that contains a number of generative text projects, based on D
 
 The following generative text strategies have been implemented:
 * Jackson Mac Low Diastic
-* nGram Markov Chain
+* N-Gram Markov Chain
 * Context Free Grammer
 * Regex Text Manipulation
 
