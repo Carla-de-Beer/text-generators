@@ -8,5 +8,13 @@ The following generative text strategies have been implemented:
 * Context Free Grammer
 * Regex Text Manipulation
 
-
 The website can be viewed via the following URL: https://carla-de-beer.github.io/Text-Generators/
+
+</br>
+<p align="center">
+  <img src="images/screenShot-04.png"/>
+  <img src="images/screenShot-03.png"/>
+  <img src="images/screenShot-02.png"/>
+  <img src="images/screenShot-01.png"/>
+</p>
+
