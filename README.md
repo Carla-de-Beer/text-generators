@@ -9,4 +9,4 @@ The following generative text strategies have been implemented:
 * Regex Text Manipulation
 
 
-The website can be viewed via the following URL: https://carla-de-beer.github.io/P5js-Text-Generators/
+The website can be viewed via the following URL: https://carla-de-beer.github.io/Text-Generators/
