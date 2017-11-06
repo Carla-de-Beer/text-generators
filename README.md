@@ -8,7 +8,7 @@ The following generative text strategies have been implemented:
 * Context Free Grammer
 * Regex Redaction
 
-The website can be viewed via the following URL: https://carla-de-beer.github.io/Text-Generators/
+To view this project, navigate to: https://carla-de-beer.github.io/Text-Generators/
 
 </br>
 <p align="center">
