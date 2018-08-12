@@ -1,5 +1,5 @@
 # Text Generators
-[![GitHub issues](https://img.shields.io/github/issues/Carla-de-Beer/Processing.svg?style=flat-square)](https://github.com/Carla-de-Beer/Text-Generators/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Carla-de-Beer/Text-Generators.svg?style=flat-square)](https://github.com/Carla-de-Beer/Text-Generators/issues)
 
 This is a website that contains a number of generative text projects, based on Daniel Shiffman's 2016-2017 "Programming from A to Z" course: http://shiffman.net/a2z/
 
